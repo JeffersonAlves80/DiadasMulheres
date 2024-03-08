@@ -1,0 +1,154 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border box;
+}
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  width:100%;
+  height: 100vh; 	
+
+
+}
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 80px;
+  box-shadow: 0 2.5px 10px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  margin: 1 auto;
+}
+
+.back-to-previous {
+
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 2px 10px;
+  font-size:15.5px;
+  cursor: pointer;
+  display: block;
+  border-radius: 10px;
+  max-width: 60px;
+  margin: 1 auto;
+  margin-bottom: 12px;
+  margin-top: 15px; 
+}
+
+
+
+
+#clickMessage {
+    margin-bottom: 25px; /* Adicione o espaçamento desejado abaixo do div */
+}
+.message {
+    margin-top: 25px; /* Adicione o espaçamento desejado acima do parágrafo */
+}
+
+
+.heart{
+	width: 100px;
+	height: 160px;
+	
+	position: relative; 
+	
+	background-color: #fc038c; 
+	background-image: linear-gradient(#fc038c, #fc038c);
+	
+	transform-origin: right bottom;
+	
+	border-radius: 15px;
+	
+	animation: heart 3s ease infinite alternate;
+}
+
+@keyframes heart{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(45deg);
+		border-top-left-radius: 50px;
+		border-top-right-radius: 50px;
+	}
+	55%{
+		transform: rotate(45deg) scale(1);
+	}
+	60%{
+		transform: rotate(45deg) scale(1.2);
+	}
+	65%{
+		transform: rotate(45deg) scale(1);
+	}
+	70%{
+		transform: rotate(45deg) scale(1.2);
+	}
+	75%{
+		transform: rotate(45deg) scale(1);
+	}
+	80%{
+		transform: rotate(45deg) scale(1.2);
+	}
+	85%{
+		transform: rotate(45deg) scale(1);
+	}
+	90%{
+		transform: rotate(45deg) scale(1.2);
+	}
+	95%{
+		transform: rotate(45deg) scale(1);
+	}
+	100%{
+		border-top-left-radius: 50px;
+		border-top-right-radius: 50px;
+		transform: rotate(45deg) scale(1.2);
+	}
+}
+
+.heart:after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	
+	border-radius: 15px;
+	
+	transform-origin: left bottom;
+	
+	background-color: #fc038c; 
+	background-image: linear-gradient(#fc038c, #fc038c);
+
+	position: absolute;	
+  
+	animation: heart_after 3s ease infinite alternate;
+}
+
+@keyframes heart_after{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(-90deg) translateY(100px); 
+		border-top-left-radius: 50px;
+		border-top-right-radius: 50px;
+	}
+	100%{
+		transform: rotate(-90deg) translateY(100px); 
+		border-top-left-radius: 50px;
+		border-top-right-radius: 50px;
+	}
+}
+
